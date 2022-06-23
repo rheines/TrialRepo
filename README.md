@@ -1,2 +1,2 @@
 # TrialRepo
-Description
+Description - first repository
