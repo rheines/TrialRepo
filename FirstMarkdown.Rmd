@@ -1,0 +1,35 @@
+---
+title: "My First markdown document"
+author: "Ryan Heines"
+date: '2022-07-11'
+output: 
+  html_document: 
+    theme: cosmo
+---
+
+Add text here. Juts use it like a typewriter and add as much as you want.
+
+Double enter for separate paragraph
+
+2 or more blank spaces at the end of a single-spaced line can also be used:
+
+Ryan Heines   
+Fish Enthusiast
+
+# First level header
+
+## Second level header
+
+### Third level Header
+
+# Basic text formatting
+
+italic *text* like this
+
+bold **text** like this
+
+subscript~text~ like this
+
+superscript^text^ like this
+
+strikethrough ~~text~~ like this

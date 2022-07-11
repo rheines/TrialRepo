@@ -1,5 +1,5 @@
 git status #checks current repo status
 git add -A #adds altered and untracked files to staging area
-git commit -am "<commit message>"
+git commit -am "modify and add gitignore"
 git push #push committed changes to GitHub
 git pull #pull changes from GitHub to local repo
