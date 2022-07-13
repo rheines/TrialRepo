@@ -33,3 +33,119 @@ subscript~text~ like this
 superscript^text^ like this
 
 strikethrough ~~text~~ like this
+
+# Lists
+
+
+## Unordered lists
+
+* Item 1
+* Item 2
+    + Item 2a
+    + Item 2b
+    
+1. Item 1
+2. Item 2
+3. Item 3
+    + Item 3a
+    + Item 3b
+    
+# Fencing
+
+in line fencing with a backtick `to show anything in plain text with *no* formatting` which can be useful for many things.
+
+in line execution of r inside the backticks by inserting r as the first element `r 3+pi`
+
+3 backticks for a whole section of plain text
+
+```
+
+everything in here is in plaintext.   
+even single lines
+
+useful especially when showing other coding instructions
+```
+
+# Block quotes with `>`
+
+> To be or not to be, that is the question
+
+# Spacer line with 3 or more underscores
+
+___
+
+Adds a line between text
+
+#Links   
+http://example.com
+
+[linked phrase](http://example.com)
+
+# Images
+
+#Table
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | *new text*
+
+# LaTeX code for equations
+
+We set off equations with `$` for brackets.
+
+## In-line vs stand-alone equations
+
+These equations such as $a = 3 + 4$ will appear inside of a single line of text.
+
+
+These equations such as $$a = 3 + 4$$ will appear in a separate line of text.  
+
+## Subscripts 
+
+$$H_0 = Z_{a + b}$$
+
+## Superscripts
+
+$$S = cA^z$$
+
+Elements can be coupled and nested
+
+$$S=cA^z_1+z_{2+x}$$
+
+## Fractions and Greek symbols
+
+$$\alpha = \frac{\beta}{\delta + \gamma_x}$$
+
+## Summation signs
+
+$$z= \sum_{i=1}^X{K}$$
+
+## Escape the backslash with a custom term
+
+$$\backslash \alpha  \le b \backslash$$
+
+## Rendering plaintext in a LaTeX equation
+
+$$P(Occurence of Species A) = Z$$-bad
+
+$$P(\mbox{Occurence of Species A}) = Z$$-good
+
+```{r,echo=TRUE,eval=TRUE}
+#Change echo or eval to not show code or not show figure
+# Don't forget to start with comments that explain what you're doing
+# Preliminaries
+library(ggplot2)
+
+
+pred <- 1:10 #vector of 10 integers
+res <- runif(10) # random uniform values
+
+# print the random numbers
+print(res)
+
+# plot the graph
+qplot(x=pred,y=res)
+```
+
+Now back to writing text in our markdown document, including LaTeX equations if we need them such as $a + b$ inserted in the middle of my sentence.
